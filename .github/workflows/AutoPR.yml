@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v2
       name: checkout
 
-    - uses: repo-sync/Createpull-request@v2
+    - uses: peter-evans/create-pull-request@v4
       name: pull-request
       with:
         destination_branch: "main"

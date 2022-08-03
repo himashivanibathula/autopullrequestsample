@@ -18,19 +18,19 @@ jobs:
  createPullRequest:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       - name: Make changes to pull request
         run: date +%s > report.txt
 
       - name: Create Pull Request
         id: cpr
-        uses: peter-evans/create-pull-request@v4
+        uses: peter-evans/create-pull-request@v2
         with:
           token: "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"
           commit-message: Update report
-          committer: GitHub <nageswarao128@github.com>
-          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          committer: GitHub <himashivanibahula@github.com>
+          author: ${{ github.actor }} <${{ github.actor }}@users.himashivanibahula.github.com>
           signoff: false
           branch: example-patches
           delete-branch: true

@@ -27,9 +27,9 @@ jobs:
         id: pnr
         uses: peter-evans/create-pull-request@v4
         with:
-          token: "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"
+          token: "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"
           commit-message: Update report
-          committer: GitHub <nageswarao128@github.com>
+          committer: GitHub <himshivanibathula@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: example-patches
@@ -43,7 +43,7 @@ jobs:
           labels: |
             report
             automated pr
-          assignees: nageswarao128
+          assignees: himashivanibathula
           reviewers: pillakathupunageswarao128@gmail.com
           team-reviewers: |
             owners: 

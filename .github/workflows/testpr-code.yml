@@ -27,14 +27,14 @@ jobs:
         id: pnr
         uses: peter-evans/create-pull-request@v4
         with:
-          token: "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"
-          commit-message: Update-Genevaimages
-          committer: GitHub <himashivanibathula@github.com>
+          token: "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"
+          commit-message: Update report
+          committer: GitHub <nageswarao128@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
           signoff: false
           branch: example-patches
           delete-branch: false
-          title: 'updated Geneva images'
+          title: '[Example] Update report'
           body: |
             Update report
             - Updated with *today's* date
@@ -43,8 +43,8 @@ jobs:
           labels: |
             report
             automated pr
-          assignees: himashivanibathula
-          reviewers: himasivanibathula@microsoft.com
+          assignees: nageswarao128
+          reviewers: pillakathupunageswarao128@gmail.com
           team-reviewers: |
             owners: 
             maintainers

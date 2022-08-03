@@ -25,7 +25,7 @@ jobs:
 
       - name: Create Pull Request
         id: cpr
-        uses: peter-evans/create-pull-request@v2
+        uses: peter-evans/create-pull-request@v3
         with:
           token: "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"
           commit-message: Update report

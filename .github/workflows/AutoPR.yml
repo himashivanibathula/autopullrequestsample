@@ -20,6 +20,10 @@ jobs:
     - uses: peter-evans/create-pull-request@v4
       name: pull-request
       with:
+        committer: GitHub <himashivanibahula@github.com>
+        author: ${{ github.actor }} <${{ github.actor }}@users.himashivanibahula.github.com>
+        signoff: false
+        branch: example-patches
         destination_branch: "main"
         pr_title: "Pulling ${{ github.ref }} into main"
         pr_body: "👑 *An automated PR*"
